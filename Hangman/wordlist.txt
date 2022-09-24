@@ -12,7 +12,7 @@ algorithm
 mergesort
 binarysearch
 bubblesort
-astar
+astarsearch
 linux
 freebsd
 openbsd
