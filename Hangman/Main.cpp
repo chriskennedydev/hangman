@@ -132,6 +132,11 @@ int main()
 	} 
 }
 
+/***********************************************
+* Generate "-" for each letter in the word the * 
+* player is guessing                           *
+* I.E. "python" is "------"                    *
+***********************************************/
 std::string emptyWord(size_t wordCount)
 {
 	std::string blankWord = "";
@@ -142,11 +147,17 @@ std::string emptyWord(size_t wordCount)
 	return blankWord;
 }
 
+/***********************************************
+*         Clear the player screen              *
+***********************************************/
 void clearScreen()
 {
 	std::cout << "\033c";
 }
 
+/***********************************************
+* End game screen when the player loses        *
+***********************************************/
 void hangman()
 {
 	clearScreen();
